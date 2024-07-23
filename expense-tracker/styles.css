@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-expense, .expense-list, .expense-summary {
+    margin-bottom: 20px;
+}
+
+.new-expense h2, .expense-list h2, .expense-summary h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#expense-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#expense-form input, #expense-form select, #expense-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#expense-form button {
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#expense-form button:hover {
+    background: #218838;
+}
+
+.expense-summary {
+    text-align: center;
+}
+
+.expense-list ul {
+    list-style: none;
+}
+
+.expense-list li {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-list li span {
+    font-weight: bold;
+}
+
+.expense-list li .amount {
+    color: #dc3545;
+}
+
+.expense-list li .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-list li .category {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.expense-list li .date {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.expense-list li .delete {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.expense-list li .delete:hover {
+    background: #c82333;
+}
